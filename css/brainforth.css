@@ -1,0 +1,472 @@
+/**
+ * 0. Fonts y etiquetas
+ **/
+@font-face {
+    font-family: 'Atyp BL';
+    src: url('../assets/fonts/AtypBL/AtypBL.woff2') format('woff2'),
+    url('../assets/fonts/AtypBL/AtypBL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp BL';
+    src: url('../assets/fonts/AtypBL/AtypBLDisplay-Medium.woff2') format('woff2'),
+    url('../assets/fonts/AtypBL/AtypBLDisplay-Medium.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp BL Display';
+    src: url('../assets/fonts/AtypBL/AtypBLDisplay-Medium.woff2') format('woff2'),
+    url('../assets/fonts/AtypBL/AtypBLDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-Bold.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-Regular.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-Italic.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-Medium.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-Light.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-SemiBold.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/CormorantFont/Cormorant-SemiBoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/CormorantFont/Cormorant-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-Bold.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-Italic.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-SemiBoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-Light.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-Regular.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../assets/fonts/SilkSerifFont/SilkSerif-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/SilkSerifFont/SilkSerif-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+html,body{
+    font-family: 'Atyp BL',sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #464646;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+    font-family: 'Cormorant',serif;
+}
+
+h1,h2,h3{
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+
+a{
+    color:#ffff;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus{
+    color: #000;
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+.navbar-toggler{
+    border: none;
+}
+
+
+/*CONTAINER TEXT VIDEO*/
+.containerV{
+    font-family: 'Atyp BL Display';
+    color: white;
+    z-index: 15;
+    position: absolute;
+    letter-spacing: 0.5rem;
+    top:10%;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SECTION MANIFEST*/
+.section-mani{
+    margin-top:-17%;
+    padding: 3%;
+}
+
+.backgroundColorMobile{
+    position: absolute;
+    background-color: rgba(183, 183, 183, 0.512);
+    height: 55%;
+    width: 100%;
+    left: -80%;
+}
+
+.pManifestMobile{
+    position: relative;
+    top:15px;
+    font-family: 'Silk Serif';
+    padding: 4%;
+    left: 33%;
+}
+
+.idHomeMobile{
+    width:35%;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+}
+
+.firstWord-ManifestMobile{
+    position: relative;
+    letter-spacing: 1rem;
+    left: -40%;
+}
+
+.secWorld-ManifestMobile{
+    letter-spacing: 1rem;
+    margin-left: -5%;
+}
+
+.backgroundColorDesk{
+    position: absolute;
+    background-color: rgba(183, 183, 183, 0.512);
+    height: 60%;
+    width: 20%;
+    left: 0;
+}
+
+.pManifestDesk{
+    position: relative;
+    top:15px;
+    padding: 4%;
+    left: 30%;
+}
+
+.idHomeDesk{
+    width:90%;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
+
+.textManifestDesk{
+    font-family: 'Silk Serif';
+    position: relative;
+    letter-spacing: 1rem;
+    left: 0;
+}
+
+
+
+/*GALLERY*/
+
+.text-Gallery{
+    font-family: 'Silk Serif';
+}
+
+.text-KnowOur{
+    font-family: 'Atyp BL';
+}
+
+.gallery {
+	display: grid;
+    padding: 20px;
+	grid-template-columns: 40% 20% 20% 20%;
+	grid-template-rows: 200px 150px 100px;
+}
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+    padding: 2%;
+	object-fit: cover;
+}
+
+.gallery img:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.gallery img:nth-child(2) {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+.gallery img:nth-child(3) {
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+.gallery img:nth-child(4) {
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+.gallery img:nth-child(5) {
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+/*SECTION CONTACT*/
+
+.contactTextMobile{
+    font-size: 35pt;
+    margin-left: 40%;
+    font-family: 'Silk Serif';
+    margin-top: 5%;
+}
+
+.divForm{
+    padding: 20px;
+}
+
+.firstWord-ContactMobile{
+    
+    position: relative;
+    left: -70%;
+}
+
+.secWorld-ContactMobile{
+    
+    margin-left: -40%;
+}
+
+.text-descContact{
+    font-size: 15pt;
+    margin-top: 10px;
+}
+
+input[type=text] {
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid rgb(121, 121, 121);
+  }
+
+  .btn-sendContactMobile{
+      position: relative;
+      background-color: #000;
+      color: #ffff;
+      padding: 10px;
+      border: none;
+      margin-top: 30px;
+      left: 40%;
+      width: 20%;
+  }
+
+  .contactText{
+      font-family: 'Silk Serif';
+    font-size: 40pt;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+
+  .firstWord-Contact{
+    letter-spacing: 0.5rem;
+    position: relative;
+    left: -70%;
+}
+
+.secWorld-Contact{
+    letter-spacing: 2rem;
+    margin-left: -50%;
+}
+
+.threeWorld-Contact{
+    letter-spacing: 1rem;
+    margin-left: -33%;
+}
+
+.btn-sendContact{
+    position: relative;
+    background-color: #000;
+    color: #ffff;
+    padding: 10px;
+    border: none;
+    margin-top: 30px;
+    left: 40%;
+    width: 20%;
+}
+  
+
+
+/*FOOTER*/
+#footer-background-mobile{
+    background: url("../assets/imgs/footer-background-mobile.jpg");
+    border: 0 solid transparent;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+}
+
+#footer-background-desktop{
+    background: url("../assets/imgs/footer-background-desktop.jpg");
+    border: 0 solid transparent;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: 100% 66%;
+}
